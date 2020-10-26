@@ -1,0 +1,52 @@
+header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  z-index: 5;
+  @media all and (max-width: 768px){
+    position: fixed;
+    background-color: white;
+    top: 0;
+    padding: 20px 0;
+    transition: ease-in-out 0.3s;
+  }
+}
+.header {
+  &-right{
+    display: flex;
+    align-items: center;
+    &__search{
+      width: 23px;
+      height: 23px;
+      background: url(../images/icons/search-icon.svg);
+      transition: ease-in-out 0.3s;
+      cursor: pointer;
+      @media all and (min-width: 768px){
+        &:hover{
+          opacity: 0.65;
+        }
+      }
+    }
+    &__burger{
+      width: 24px;
+      height: 19px;
+      background: url(../images/icons/burger-icon.svg);
+      margin: 0 3rem;
+      transition: ease-in-out 0.3s;
+      cursor: pointer;
+      @media all and (max-width: 768px){
+        margin-right: 0;
+      }
+      @media all and (min-width: 768px){
+        &:hover{
+          opacity: 0.65;
+        }
+      }
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,80 @@
+.input{
+  &---size{
+    position: relative;
+    input, textarea{
+      @extend %font16px;
+      line-height: 28px;
+      padding-bottom: 18px;
+      resize: none;
+    }
+    width: 100%;
+  }
+
+  &-arrow_btn{
+    position: absolute;
+    right: -30px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    background: url(../images/icons/input-red_arr.svg) no-repeat scroll center center;
+    top: 9px;
+    padding: 0;
+    cursor: pointer;
+    @media all and (max-width: 768px){
+      right: 0;
+      width: 25px;
+      height: 30px;
+    }
+    @media all and (min-width: 768px){
+    &:hover{
+      animation: arrowMove 0.3s;
+    }
+  }
+  }
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: all .2s ease;
+  color: rgba(132, 135, 152, 0.5);;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.inputText:focus + .floating-label, .inputText:not(:placeholder-shown) + .floating-label{
+  top: -20px;
+  color: #848798;
+  font-size: 12px;
+}
+.inputText.error + .floating-label{
+  top: -20px;
+  color: #848798;
+  font-size: 12px;
+}
+
+.inputText:focus,
+.inputText:not(:placeholder-shown) {
+  border-color: #848798;
+  background-color: #ffffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@keyframes arrowMove{
+  0%, 100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

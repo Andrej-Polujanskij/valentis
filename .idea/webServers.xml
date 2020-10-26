@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9397ef56-3850-4847-9852-364dae990c49" name="valentis" url="http://duonis.serveriai.lt">
+        <fileTransfer host="duonis.serveriai.lt" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" maxConnections="10" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

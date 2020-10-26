@@ -1,0 +1,51 @@
+.p_policy-page {
+  background-color: #f8f9fa;
+  &__content{
+    padding: 120px 0;
+    @media all and (max-width: 768px){
+      padding: 40px 0;
+    }
+    &__title{
+      @extend %font24px;
+      margin-bottom: 12px;
+    }
+    &__text{
+      @extend %p;
+      line-height: 30px;
+
+    }
+    &___row{
+      margin-bottom: 40px;
+    }
+
+    &__list{
+      margin: 40px 0 40px 60px;
+      @media all and (max-width: 768px){
+        margin: 30px 0 30px 30px;
+      }
+      position: relative;
+      &--title{
+        @extend %font16px;
+        margin-bottom: 5px;
+      }
+      &--text{
+        @extend %p;
+        line-height: 30px;
+      }
+
+      &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #c6242b;
+        border-radius: 50%;
+        left: -60px;
+        top: 5px;
+        position: absolute;
+        @media all and (max-width: 768px){
+          left: -30px;
+        }
+      }
+    }
+  }
+}

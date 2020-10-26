@@ -1,0 +1,87 @@
+@import "helpers/helpers";
+@import "blocks/blocks";
+@import "pages/pages";
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body * {
+    font-family: $main_font;
+}
+body{
+    @media all and (max-width: 768px){
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 120px;
+    // width: calc(100% - 240px); 
+    margin: 0 auto;
+    @media all and (max-width: 1024px){
+        padding: 0 60px;
+    }
+    @media all and (max-width: 768px){
+        padding: 0 20px;
+    }
+}
+
+.slick-slide{
+    display: table-cell !important;
+    float: none !important;
+    outline: none;
+}
+
+.slider-activities__image{
+    .slick {
+        &-list{
+            height: 100%;
+        }
+        &-track{
+            height: 100%;
+        }
+        &-slide{
+            float: left!important;
+        }
+    }
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+input.error{
+    border-bottom: 1px solid $red;
+}
+label.error{
+    color: #c6242b;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.error-page{
+    &__content{
+        h4{
+            @extend %font24px;
+            margin-bottom: 12px;
+        }
+        p{
+            @extend %p;
+            line-height: 30px;
+        }
+    }
+    &---section-btn{
+        margin-top: 60px;
+    }
+}
+
+.custom--title{
+    max-width: 50%!important;
+    text-align: center;
+}
+

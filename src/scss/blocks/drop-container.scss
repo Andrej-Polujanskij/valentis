@@ -1,0 +1,125 @@
+.drop-container{
+
+  background: $white;
+  padding: 10rem 0;
+  box-shadow: 0 2px 30px rgba(132, 135, 152, 0.15);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -10rem;
+  @media all and (max-width: 768px){
+    top: 0;
+    padding: 2rem 0 4rem;
+  }
+
+  &---footer{
+    top: 0;
+    box-shadow: none;
+    @media all and (max-width: 768px){
+      padding: 0;
+      box-shadow: none;
+      border: 1px solid #e6e7ea;
+    }
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+    &---footer{
+      display: none;
+    }
+    @media all and (max-width: 768px){
+      margin-bottom: 4rem;
+      &---footer{
+        display: block;
+        margin-top: 4rem;
+      }
+    }
+    &---right{
+      display: flex;
+      align-items: center;
+      .header-right__search{
+        margin-right: 3rem;
+      }
+    }
+    &___out{
+      background: url(../images/icons/header-out.svg) no-repeat scroll center center;
+      width: 24px;
+      height: 17px;
+      transition: ease-in-out 0.3s;
+      cursor: pointer;
+      @media all and (min-width: 768px){
+        &:hover{
+          opacity: 0.65;
+        }
+      }
+    }
+  }
+}
+
+.search-container{
+  .section-btn__circle---big{
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+
+  display: none;
+  z-index: 5;
+  &__row{
+    form{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media all and (max-width: 768px){
+       flex-wrap: wrap;
+      //  justify-content: flex-end;
+      }
+    }
+  }
+  &__input{
+    width: 75%;
+    @media all and (max-width: 768px){
+      width: 100%;
+      margin-bottom: 40px;
+     }
+    input, textarea{
+      @extend %font24px;
+      border: none;
+      border-bottom: 1px solid rgba(132, 135, 152, 0.3);
+      width: 100%;
+      padding-bottom: 3rem;
+      &::placeholder{
+        color: rgba(132, 135, 152, 0.5);
+      }
+    }
+    textarea{
+      resize: none;
+      overflow-y: hidden;
+      min-height: 48px;
+      max-height: 100%;
+
+    }
+  }
+  &__btn{
+    width: 25%;
+    @media all and (max-width: 768px){
+      width: 100%;
+    }
+    .section-btn{
+      justify-content: flex-end;
+      align-items: center;
+      @media all and (max-width: 768px){
+        align-items: center;
+      }
+    }
+  }
+}
+.mobile-menu-container{
+  display: none;
+  @media all and (max-width: 1024px){
+    min-height: 100vh;
+  }
+}

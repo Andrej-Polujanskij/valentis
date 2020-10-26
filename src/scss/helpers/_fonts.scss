@@ -1,0 +1,19 @@
+// Convert your font using https://transfonter.org/, copy the generated @font-faces here and adjust the paths;
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro Roman";
+   src: url('../fonts/Helvetica-Roman.ttf');
+
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro Md";
+   src: url('../fonts/Helvetica-Medium.ttf');
+
+   font-weight: normal;
+   font-style: normal;
+}
+//
+$main_font: 'Helvetica Neue LT Pro Roman', sans-serif;
+$sub_font: 'Helvetica Neue LT Pro Md', sans-serif;

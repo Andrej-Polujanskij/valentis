@@ -1,0 +1,41 @@
+.p_policy{
+  background: $white;
+  padding: 30px;
+  padding-right: 55px;
+  z-index: 54;
+  position: fixed;
+  bottom: 80px;
+  width: 320px;
+  right: 40px;
+  display: none;
+  @media all and (max-width: 768px){
+    bottom: 0;
+    width: 100%;
+    right: 0;
+  }
+
+  &__text{
+    @extend %font14px;
+    color: $lightGray;
+    line-height: 26px;
+  }
+
+  &---out{
+    width: 13px;
+    height: 13px;
+    transition: ease-in-out 0.3s;
+    opacity: .3;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    @media all and (min-width: 768px){
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+  &---section-btn{
+    margin-top: 30px;
+  }
+}

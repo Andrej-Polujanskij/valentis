@@ -1,0 +1,75 @@
+.hero {
+  background: no-repeat scroll center center;
+  background-size: cover;
+  padding: 10rem 0;
+  min-height: 715px;
+  position: relative;
+  @media all and (max-width: 1024px){
+    min-height: auto;
+  }
+  @media all and (max-width: 768px){
+    padding: 4rem 0;
+  }
+
+  &__nav{
+    margin-bottom: 40px;
+    display: flex;
+     align-items: center;
+     @media all and (max-width: 768px){
+      margin-bottom: 15px;
+     }
+    a{
+      @extend %font12px;
+      transition: ease-in-out 0.3s;
+      @media all and (min-width: 768px){
+        &:hover{
+          color: $mediumBlack;
+        }
+      }
+    }
+    &___arrow{
+      background: url(../images/icons/nav-arr.svg) no-repeat scroll center center;
+      width: 5px;
+      height: 10px;
+      margin: 0 12px;
+    }
+  }
+
+  &---inner_page{
+    .container{
+      margin-top: 15rem;
+      position: relative;
+    }
+  }
+
+  &__container{
+    max-width: 846px;
+    // max-width: 985px;
+    margin-left: 21.5em;
+    @media all and (max-width: 1150px){
+      margin-left: 11rem;
+    }
+    @media all and (max-width: 1024px){
+      max-width: 710px;
+      margin-left: 18rem;
+    }
+    @media all and (max-width: 768px){
+      max-width: 500px;
+      margin-left: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 7.4rem;
+
+    &---inner{
+      @media all and (max-width: 768px){
+        margin-bottom: 5px;
+      }
+    }
+    h1 {
+      @extend %h1;
+      font-weight: 400;
+    }
+  }
+
+}

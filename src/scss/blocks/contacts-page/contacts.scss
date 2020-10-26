@@ -1,0 +1,157 @@
+.contacts{
+  &-hero__container{
+    @media all and (max-width: 1024px){
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 768px){
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    h1{
+      max-width: 550px;
+    }
+  }
+
+  &---section-btn{
+    align-items: center;
+    min-width: 160px;
+    margin-left: 20px;
+    @media all and (max-width: 768px){
+      margin-left: 0;
+      margin-top: 40px;
+      .section-btn__circle---big{
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &-container{
+    border-top: 1px solid $grayBorder;
+    padding-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 768px){
+      padding-top: 40px;
+      flex-direction: column;
+      &__item{
+        &:nth-child(2){
+          margin: 40px 0;
+        }
+      }
+    }
+
+    &__title{
+      @extend %font24px;
+      padding-bottom: 10px;
+    }
+
+    &__address{
+      @extend %p;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__kind{
+    display: flex;
+    @extend %p;
+    &___name{
+      @extend %p;
+      color: $black;
+      margin-right: 24px;
+      min-width: 48px;
+    }
+    &___contacts{
+      a{
+        @extend %p;
+      }
+    }
+  }
+
+  .container{
+    @media all and (max-width: 768px){
+      margin-top: 20px;
+    }
+  }
+
+  &-drop{
+    z-index: 10;
+    display: none;
+    .container{
+      margin-top: 10rem;
+      @media all and (max-width: 1024px){
+        min-height: 100vh;
+      }
+      @media all and (max-width: 768px){
+        margin-top: 0;
+      }
+    }
+
+    &__content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title{
+      @extend %font54px;
+      max-width: 500px;
+    }
+
+    &__form{
+      max-width: 500px;
+      width: 100%;
+      margin-top: 70px;
+      position: relative;
+      @media all and (max-width: 768px){
+        max-width: 100%;
+        margin-top: 40px;
+      }
+
+    }
+
+    &---input{
+      margin-bottom: 40px;
+      @media all and (max-width: 768px){
+        margin-bottom: 30px;
+      }
+    }
+
+    &---section-btn{
+      margin-top: 70px;
+      justify-content: end;
+      margin-right: 40px;
+      @media all and (max-width: 768px){
+        margin-top: 50px;
+      }
+    }
+
+    &__message{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5555;
+      background: $white;
+      display: none;
+      &___title{
+        @extend %font24px;
+        margin-bottom: 12px;
+      }
+      &___text{
+        @extend %p;
+      }
+      &---section-btn{
+        margin-top: 60px;
+      }
+    }
+  }
+}

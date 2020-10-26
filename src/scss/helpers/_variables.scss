@@ -1,0 +1,84 @@
+$black: #222329;
+$red: #c6242b;
+$white: #FFFFFF;
+$hoverGray: #d2d3d8;
+$lightGray: #848798;;
+$mediumBlack: #27272f;
+$sectionBG: #f8f9fa;
+$grayBorder: #e6e7ea;
+
+%h1{
+  color: $black;
+  font-size: 9.6rem;
+  font-weight: 600;
+  line-height: 10rem;
+  @media all and (max-width: 1024px){
+    font-size: 6.4rem;
+    line-height: 70px;
+  }
+  @media all and (max-width: 768px){
+    font-size: 4.8rem;
+    line-height: 50px;
+  }
+}
+
+%font54px{
+  color: $black;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 56px;
+  @media all and (max-width: 1024px){
+    font-size: 42px;
+    line-height: 44px;
+  }
+  @media all and (max-width: 768px){
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+%font24px{
+  color: $black;
+  font-size: 24px;
+  line-height: 28px;
+  @media all and (max-width: 768px){
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+%font16px{
+  color: $black;
+  font-size: 16px;
+  line-height: 20px;
+  @media all and (max-width: 768px){
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+%p{
+  color: $lightGray;
+  font-size: 16px;
+  line-height: 32px;
+  @media all and (max-width: 768px){
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+%font14px{
+  color: $black;
+  font-size: 14px;
+  line-height: 18px;
+  @media all and (max-width: 768px){
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+%font12px{
+  color: $lightGray;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
